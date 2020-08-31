@@ -4,6 +4,10 @@
        url('public/CONSOLA.TTF') format('truetype')
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     /* $ VARIABLES */
     /* > Sizes */
@@ -14,8 +18,10 @@
     /* > Colors */
     /* 1> BnW */
     --primary: #212531;
+    --primary2: #3F455C;
     --accent1: #FFF1E7;
     --accent2: #E4D0C1;
+    --accent3: #BEAFA3;
     --black-true: #000;
 
     background-color: var(--primary);

@@ -6,25 +6,35 @@
     <title>Gregorius Jovan Kresnadi</title>
     <link rel="stylesheet" href="./index.css" />
     <link rel="stylesheet" href="./style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div class="fixed-nav">
-        <div class="nav-item" id="nav-profile">
-            <img class="nav-pic" src="./public/nav-profile.svg" />
-        </div>
-        <div class="nav-item" id="nav-bike">
-            <img src="./public/nav-bike.svg" />
-        </div>
-        <div class="nav-item" id="nav-porto">
-            <img src="./public/nav-porto.svg" />
-        </div>
-        <div class="nav-item" id="nav-contact">
-            <img src="./public/nav-contact.svg" />
-        </div>
+        <a href="#profile" onclick="nav('nav-profile')">
+            <div class="nav-item active" id="nav-profile">
+                <img class="nav-pic" src="./public/nav-profile.svg" />
+            </div>
+        </a>
+        <a href="#bike" onclick="nav('nav-bike')">
+            <div class="nav-item" id="nav-bike">
+                <img src="./public/nav-bike.svg" />
+                
+            </div>
+        </a>
+        <!-- <a href="#porto" onclick="nav('nav-porto')">
+            <div class="nav-item" id="nav-porto" href="#porto">
+                <img src="./public/nav-porto.svg" />
+            </div>
+        </a> -->
+        <a href="#contact" onclick="nav('nav-contact')">
+            <div class="nav-item" id="nav-contact" href="#contact">
+                <img src="./public/nav-contact.svg" />
+            </div>
+        </a>
     </div>
-    <section class="landing">
-        <div class="bacon">
+    <section class="landing" id="profile">
+        <div class="bacon" id="bacon">
             <p>
                 &nbsp____ <3<br/>
                 / / /<br/>
@@ -34,21 +44,87 @@
         </div>
         <div class="profile">
             <div class="profile-picture">
-                <img src="./ProfilePic.png" />
+                <img src="./public//ProfilePic.png" />
             </div>
             <div class="profile-name">
                 <p class="pre-name">My name is</p>
                 <h2>Gregorius Jovan Kresnadi</h2>
             </div>
+            <!-- <div class="line-separator"> </div> -->
             <div class="profile-desc">
-                <h3> Bike Enthusiast </h3>
-                <h3> Front End Developer </h3>
-                <h3> Indie Game Nerd </h3>
-                <h3> Based in Bandung, Indonesia </h3>
-                <h3> BaconLover307</h3>
+                <h3 class="desc">
+                    <span
+                    class="txt-rotate"
+                    data-period="1000"
+                    data-rotate='[
+                    "BaconLover307",
+                        "Bike Enthusiast.",
+                        "Front End Developer.",
+                        "Indie Game Nerd.",
+                        "Based in Bandung, Indonesia."
+                        
+                    ]'></span>
+                </h3>
             </div>
         </div>
     </section>
-    <h1> TESTING</h1>
+    <section class="bike" id="bike">
+        <a href="https://instagram.com/sang.pemuja.baja" target="_blank">
+            <div class="bike-text">Follow my story...</div>
+        </a>
+    </section>
+    <!-- <section class="porto" id="porto"> -->
+
+    </section>
+    <section class="contact" id="contact">
+        <div class="message">
+            <h2>
+                Let's get in touch...
+            </h2>
+        </div>
+        <div class="contacts-container">
+            <a href="https://instagram.com/sang.pemuja.baja" target="_blank">
+                <div class="icon-container">
+                    <svg id="Bold" enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg">
+                        <path d="m12.004 5.838c-3.403 0-6.158 2.758-6.158 6.158 0 3.403 2.758 6.158 6.158 6.158 3.403 0 6.158-2.758 6.158-6.158 0-3.403-2.758-6.158-6.158-6.158zm0 10.155c-2.209 0-3.997-1.789-3.997-3.997s1.789-3.997 3.997-3.997 3.997 1.789 3.997 3.997c.001 2.208-1.788 3.997-3.997 3.997z"/><path d="m16.948.076c-2.208-.103-7.677-.098-9.887 0-1.942.091-3.655.56-5.036 1.941-2.308 2.308-2.013 5.418-2.013 9.979 0 4.668-.26 7.706 2.013 9.979 2.317 2.316 5.472 2.013 9.979 2.013 4.624 0 6.22.003 7.855-.63 2.223-.863 3.901-2.85 4.065-6.419.104-2.209.098-7.677 0-9.887-.198-4.213-2.459-6.768-6.976-6.976zm3.495 20.372c-1.513 1.513-3.612 1.378-8.468 1.378-5 0-7.005.074-8.468-1.393-1.685-1.677-1.38-4.37-1.38-8.453 0-5.525-.567-9.504 4.978-9.788 1.274-.045 1.649-.06 4.856-.06l.045.03c5.329 0 9.51-.558 9.761 4.986.057 1.265.07 1.645.07 4.847-.001 4.942.093 6.959-1.394 8.453z"/><circle cx="18.406" cy="5.595" r="1.439"/>
+                    </svg>
+                </div>
+            </a>
+            <a href="https://github.com/baconlover307" target="_blank">
+                <div class="icon-container">
+                    <?xml version="1.0" encoding="iso-8859-1"?>
+                    <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                    <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="439" height="439" viewBox="0 0 438.5 438.5"><path d="M409.1 114.6c-19.6-33.6-46.2-60.2-79.8-79.8C295.7 15.2 259.1 5.4 219.3 5.4c-39.8 0-76.5 9.8-110.1 29.4 -33.6 19.6-60.2 46.2-79.8 79.8C9.8 148.2 0 184.9 0 224.6c0 47.8 13.9 90.7 41.8 128.9 27.9 38.2 63.9 64.6 108.1 79.2 5.1 1 8.9 0.3 11.4-2 2.5-2.3 3.7-5.1 3.7-8.6 0-0.6 0-5.7-0.1-15.4 -0.1-9.7-0.1-18.2-0.1-25.4l-6.6 1.1c-4.2 0.8-9.5 1.1-15.8 1 -6.4-0.1-13-0.8-19.8-2 -6.9-1.2-13.2-4.1-19.1-8.6 -5.9-4.5-10.1-10.3-12.6-17.6l-2.9-6.6c-1.9-4.4-4.9-9.2-9-14.6 -4.1-5.3-8.2-8.9-12.4-10.8l-2-1.4c-1.3-1-2.6-2.1-3.7-3.4 -1.1-1.3-2-2.7-2.6-4 -0.6-1.3-0.1-2.4 1.4-3.3 1.5-0.9 4.3-1.3 8.3-1.3l5.7 0.9c3.8 0.8 8.5 3 14.1 6.9 5.6 3.8 10.2 8.8 13.8 14.8 4.4 7.8 9.7 13.8 15.8 17.8 6.2 4.1 12.4 6.1 18.7 6.1 6.3 0 11.7-0.5 16.3-1.4 4.6-1 8.8-2.4 12.8-4.3 1.7-12.8 6.4-22.6 14-29.4 -10.8-1.1-20.6-2.9-29.3-5.1 -8.7-2.3-17.6-6-26.8-11.1 -9.2-5.1-16.9-11.5-23-19.1 -6.1-7.6-11.1-17.6-15-30 -3.9-12.4-5.9-26.6-5.9-42.8 0-23 7.5-42.6 22.6-58.8 -7-17.3-6.4-36.7 2-58.2 5.5-1.7 13.7-0.4 24.6 3.9 10.9 4.3 18.8 8 23.8 11 5 3 9.1 5.6 12.1 7.7 17.7-4.9 36-7.4 54.8-7.4s37.1 2.5 54.8 7.4l10.8-6.8c7.4-4.6 16.2-8.8 26.3-12.6 10.1-3.8 17.8-4.9 23.1-3.1 8.6 21.5 9.3 40.9 2.3 58.2 15 16.2 22.6 35.8 22.6 58.8 0 16.2-2 30.5-5.9 43 -3.9 12.5-8.9 22.5-15.1 30 -6.2 7.5-13.9 13.9-23.1 19 -9.2 5.1-18.2 8.9-26.8 11.1 -8.7 2.3-18.4 4-29.3 5.1 9.9 8.6 14.8 22.1 14.8 40.5v60.2c0 3.4 1.2 6.3 3.6 8.6 2.4 2.3 6.1 3 11.3 2 44.2-14.7 80.2-41.1 108.1-79.2 27.9-38.2 41.8-81.1 41.8-128.9C438.5 184.9 428.7 148.2 409.1 114.6z"/>
+                    </svg>
+                    
+                </div>
+            </a>
+        </div>
+        <div class="contacts-container">
+            <a href="https://linkedin.com/in/gregorius-jovan-kresnadi" target="_blank">
+                <div class="icon-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                    </svg>
+                </div>
+            </a>
+            <!-- <a href="https://instagram.com/sang.pemuja.baja" target="_blank">
+                <div class="icon-container">
+                    <svg src="./public/icon-line.svg" />
+                </div>
+            </a> -->
+            <a href="mailto:kresnadi30@gmail.com" target="_blank">
+                <div class="icon-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M467 61H45c-6.9 0-13.4 1.7-19.3 4.5L255 294.8l51.4-49.4c0 0 0 0 0 0 0 0 0 0 0 0L486.3 65.5C480.4 62.7 473.9 61 467 61z"/><path d="M507.5 86.7L338.2 256 507.5 425.3c2.8-5.9 4.5-12.4 4.5-19.3V106C512 99.1 510.3 92.6 507.5 86.7z"/><path d="M4.5 86.7C1.7 92.6 0 99.1 0 106v300c0 6.9 1.7 13.4 4.5 19.3L173.8 256 4.5 86.7z"/><path d="M317 277.2l-51.4 49.4c-2.9 2.9-6.8 4.4-10.6 4.4s-7.7-1.5-10.6-4.4L195 277.2 25.7 446.5C31.6 449.3 38.1 451 45 451h422c6.9 0 13.4-1.7 19.3-4.5L317 277.2z"/></svg>
+                </div>
+            </a>
+        </div>
+    </section>
 </body>
+<script src="typing.js"></script>
+<script src="nav.js"></script>
+<script type="text/javascript">
+
+</script>
 </html>
