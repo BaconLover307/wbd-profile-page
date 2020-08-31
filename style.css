@@ -1,0 +1,65 @@
+.bacon {
+    padding: 2rem 3rem;
+}
+
+/* $ Profile Section */
+
+.landing {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: column;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-name {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.pre-name {
+    position: absolute;
+    left: -70px;
+    top: 10px;
+}
+
+.profile-name p{
+    font-size: 18px;
+}
+
+.profile-name h2{
+    padding-top: 2rem;
+    font-size: 30px;
+    font-weight: 500;
+
+}
+
+/* $ Nav Box */
+
+.fixed-nav {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 100px;
+}
+
+.nav-item {
+    height: 100px;
+    background-color: var(--accent1);
+    position: relative;
+}
+
+.nav-item img {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    right: 0;
+}

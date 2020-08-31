@@ -1,0 +1,42 @@
+@font-face{
+    font-family:  'Consola';
+    src: local('Consola'),
+       url('public/CONSOLA.TTF') format('truetype')
+}
+
+:root {
+    /* $ VARIABLES */
+    /* > Sizes */
+    /* --container-border-width: 3px;
+    --container-border-radius: 2rem;
+    --elm-border-radius: 1rem; */
+
+    /* > Colors */
+    /* 1> BnW */
+    --primary: #212531;
+    --accent1: #FFF1E7;
+    --accent2: #E4D0C1;
+    --black-true: #000;
+
+    background-color: var(--primary);
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Consola;
+    color: var(--accent1);
+    scrollbar-width: thin;  /* Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
