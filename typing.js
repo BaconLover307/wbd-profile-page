@@ -37,8 +37,7 @@ var TxtRotate = function(el, toRotate, period) {
   
     let inner = document.getElementById("typing");
     let text = inner.innerHTML;
-    if (text == "BaconLover307") {
-        console.log("pass");
+    if (text == "BaconLover307.") {
         inner.addEventListener("click", function() {
             document.getElementById("bacon").style.visibility = "visible";
         })
